@@ -1,0 +1,42 @@
+header {
+    font-size:100px;
+  font-family: "Comic Sans MS";
+    background: linear-gradient(to bottom, #ffbb00, #080808, #05038c);
+    -webkit-text-fill-color: transparent; 
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-stroke:3.5px black;
+    animation: wiggle 2s;
+  }
+  body {
+    font-family: "Comic Sans MS";
+    font-size: 50px;
+    background-color:#1e2333;
+    color:red;
+    position: absolute;
+    top: 50%;
+    Left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+  input[type=text] {
+    font-family:"Comic Sans MS";
+    font-size: 30px;
+    color:red;
+    border-style:outset;
+    border-radius: 7.5px 7.5px;
+    border-width:5px;
+    border-color:#394260;
+}
+  button {
+    border-style:outset;
+    border-radius: 7.5px 7.5px;
+    border-width:2.5px;
+    border-color:#394260;
+}
+  #unscrambled {
+   font-family:"Comic Sans MS";
+    font-size: 30px;
+    color:#ffffff;
+   
+}
+}
