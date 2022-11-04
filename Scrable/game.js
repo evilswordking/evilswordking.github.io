@@ -20,7 +20,7 @@ function check() {
   if (gameOver) { alert("You were Spooked!"); return false; }
 
   if (selectedWord === document.getElementById("myWord").value.trim().toLowerCase()) {
-    alert("YES!")
+    alert("You found a word!")
     document.getElementById("unscrambled").innerHTML += `<div>${selectedWord}</div>`;
     document.getElementById("myWord").value = "";
     unscrambledCounter++;
