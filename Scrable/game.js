@@ -26,7 +26,7 @@ function check() {
     unscrambledCounter++;
     nextWord();
   } else {
-    alert("WRONG!");
+    alert("Boo!");
     giveUp();
   }
 }
