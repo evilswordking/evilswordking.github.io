@@ -1,5 +1,5 @@
 // Our master array of Halloween words
-const allWords = ["Costumes", "Monster", "Disguise", "Ghost", "Witch", "Pumpkin", "Candle", "Zombie", "Frankenstein", "October", "Scarecrow", "Pirate", "Crow", "Cat", "Broomstick", "Vampire", "Prince", "Princess", "Candy", "Werewolf", "Mask", "Spell", "Goblin", "Ghoul", "Alien", "Mummy", "Spooky", "Creepy", "Slimy", "Fangs", "Blood", "Skeleton", "Graveyard", "Party", "Screaming", "Bats", "Skull", "Wicked", "Scary"];
+const allWords = ["Costumes", "Monster", "Disguise", "Ghost", "Witch", "Pumpkin", "Candle", "Zombie", "Frankenstein", "October", "Scarecrow", "Pirate", "Crow", "Cat", "Broomstick", "Vampire", "Prince", "Princess", "Candy", "Werewolf", "Mask", "Spell", "Goblin", "Ghoul", "Alien", "Mummy", "Spooky", "Creepy", "Slimy", "Fangs", "Blood", "Skeleton", "Graveyard", "Party", "Screaming", "Bats", "Skull", "Wicked", "Scary", "Combobreaker"];
 let selectedWord = "";
 let gameOver = false;
 let unscrambledCounter = 0;
@@ -17,7 +17,7 @@ function nextWord() {
 }
 
 function check() {
-  if (gameOver) { alert("Sorry the game is over. Refresh to play again."); return false; }
+  if (gameOver) { alert("You were Spooked!"); return false; }
 
   if (selectedWord === document.getElementById("myWord").value.trim().toLowerCase()) {
     alert("YES!")
@@ -34,7 +34,7 @@ function check() {
 function giveUp() {
   document.getElementById("myWord").value = selectedWord;
   gameOver = true;
-  alert("Game Over! You unscrambled " + unscrambledCounter + " words");
+  alert("You were spooked! Your soup spelled " + unscrambledCounter + " words");
 }
 
 nextWord()
